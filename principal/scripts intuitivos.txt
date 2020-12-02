@@ -1,0 +1,13 @@
+DDL:
+CREATE TABLE proveedor (  
+  id_proveedor            	NUMBER,  
+  nombre          	VARCHAR2(20),  
+  direccion	        VARCHAR2(20)
+);
+
+INSERT INTO proveedor (id_proveedor, nombre, direccion) VALUES (1, 'GUIDO', 'ESTACION CENTRAL');
+INSERT INTO proveedor (id_proveedor, nombre, direccion) VALUES (2, 'FERNANDO', 'LA FLORIDA');
+
+SELECT * FROM proveedor;
+
+SELECT count(nombre) FROM proveedor;
